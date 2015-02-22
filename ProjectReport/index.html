@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Exploring Daily Activity Numbers</title>
+	<meta name="description" content="Exploring Daily Activity Numbers">
+	<meta name="author" content="zdilli">
+	<meta name="generator" content="slidify" />
+	
+	<!-- LOAD STYLE SHEETS -->
+	<link rel="stylesheet" href="libraries/frameworks/html5slides/default/styles.css">
+	<link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />  <link rel="stylesheet" href = "assets/css/ribbons.css">
+  
+</head>
+<body style='display: none'>
+	<section class='slides layout-regular template-regular'>
+     <article class="" id="slide-1" style="background:;">
+  <h3>Exploring Daily Activity Numbers</h3>
+  <H3> Developing Data Products Class Project </h3>
+
+</article>
+
+<article class="class" id="id" style="background:;">
+  <h3>Daily Activity Monitoring Data</h3>
+  <P>During the Reproducible Research class of the Data Science track, the class project involved data gathered by a personal activity tracking device.  </p>
+
+<p>The device recorded the number of steps the research subject took in each five-minute interval of the day for 61 days. </P>
+
+</article>
+
+<article class="class" id="id" style="background:;">
+  <h3>App Features</h3>
+  <ul>
+<li>This app allows the user to choose a single day of the week, the weekdays Monday through Friday, or the weekend days Saturday and Sunday.<br></li>
+<li>It plots the average number of steps taken in each interval over all the instances of the chosen day or day range.</li>
+<li>It also plots the histogram of the average number of steps vs. intervals.</li>
+</ul>
+
+</article>
+
+<article class="" id="slide-4" style="background:;">
+  <h3>App Features, 2:</h3>
+  <p>For example, this plot shows the unedited data for all days:</p>
+
+<pre><code class="r">actdata &lt;- read.csv(&quot;activity.csv&quot;)
+plot(actdata$interval, actdata$steps, col = &quot;blue&quot;, lwd = 2, ylab = &quot;No. of steps&quot;, 
+    xlab = &quot;Interval of day&quot;)
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+</article>
+
+<article class="" id="slide-5" style="background:;">
+  <h3>App Features, 3:</h3>
+  <ul>
+<li>The app allows the user to guess at the mean number of steps per interval the test subject has taken and superimposes the guessed mean value on the line plot and histogram.<br></li>
+<li>It then shows the user how far the guess is off by.</li>
+<li>The app also allows the user to guess at the total number of steps taken during a typical example of the chosen day.</li>
+<li>It also shows how far this guess is off by using a statement.</li>
+</ul>
+
+</article>
+
+  </section>
+</body>
+  <!-- LOAD JAVASCRIPTS  -->
+	<script src='libraries/frameworks/html5slides/default/slides.js'></script>
+	<!-- LOAD HIGHLIGHTER JS FILES -->
+	<script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+	 
+	</html>
